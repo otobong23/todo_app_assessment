@@ -1,7 +1,29 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Custom colors from Figma design */
+  --mkv-gray-light: #f7f7f7;
+  --mkv-white: #ffffff;
+  --mkv-blue-light: #cdd6e9;
+  --mkv-gray-medium: #6c7278;
+  --mkv-gray-blue: #bac1cc;
+  --mkv-gray-dark: #464b50;
+  --mkv-blue-medium: #7988a9;
+  --mkv-black: #1a1c1e;
+  --mkv-teal-light: #e9f5f7;
+  --mkv-teal: #75c5c1;
+  --mkv-yellow: #f6be38;
+  --mkv-yellow-light: #fbf4e4;
+  --mkv-purple-light: #cfb7e8;
+  --mkv-purple-bg: #f9f3ff;
+  --mkv-blue-bg: #f9fafe;
+  --mkv-purple-bg-light: #f6ecff;
+  --mkv-red: #ff515d;
+  --mkv-gray-text: #545464;
+  --mkv-gray-dark-text: #292d32;
+  --mkv-gray-border: #e1e0e1;
+  --mkv-purple-dark: #41245f;
+  --mkv-blue-bg-alt: #eef1f9;
 }
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {

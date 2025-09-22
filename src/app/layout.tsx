@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Provider } from "@/components/ui/provider";
+import DashboardLayout from "@/components/DashboardLayout";
+import Navbar from "@/components/Nav/Navbar";
+import Sidebar from "@/components/Nav/Sidebar";
 
 //Fonts
 //__Start__
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
-  subsets: ["latin"]
+  subsets: ["latin"],
+  weight: ['400', '500', '600', '700', '800']
 })
 //__End__
 
@@ -29,10 +33,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${plusJakarta.variable}`}>
+    <html lang="en" style={{ scrollBehavior: 'smooth' }} suppressHydrationWarning>
+      <body className={`${plusJakarta.variable}`} style={{ fontFamily: "var(--font-plus-jakarta-sans)" }}>
         <Provider>
-          {children}
+          <DashboardLayout Navbar={<Navbar />} Sidebar={<Sidebar />}>
+            {children}
+          </DashboardLayout>
         </Provider>
       </body>
     </html>
